@@ -1,6 +1,6 @@
 CXX=g++
 CXXFLAGS=-Iinclude/ -O1
-LDFLAGS=lib/libpng16.a lib/libz.a
+LDFLAGS=lib/libpng16.a lib/libz.a -no-pie
 
 OBJECTS=src/main.o src/image.o src/stencil.o
 
