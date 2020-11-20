@@ -13,4 +13,4 @@ run:	all
 	bin/stencil test-image.png
 
 clean:
-	rm -f $(OBJECTS) bin/stencil output.png src/*~ *~
+	rm -f $(OBJECTS) bin/stencil data.txt src/*~ *~

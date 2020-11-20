@@ -58,13 +58,14 @@ int main(int argc, char** argv) {
 
    fp = fopen ("data.txt", "w+");
   P * out = img_out.pixel;
-  for (int j = 1; j < img_in.width-1; j++) {
-      for (int i = 1; i < img_in.height-1; i++) {
+  for (int j = 1; j < img_in.width/16; j++) {
+      for (int i = 1; i < img_in.height/16; i++) {
           fprintf(fp,"%lf\n",out[i*img_in.width + j]);
       }
   }
   fclose(fp);
-  img_out.WriteToFile("output.png");
-  printf("\nOutput written into data.txt and output.png\n");
+//  img_out.WriteToFile("output.png");
+//  printf("\nOutput written into data.txt and output.png\n");
+  printf("\nOutput written into data.txt\n");
 
 }
